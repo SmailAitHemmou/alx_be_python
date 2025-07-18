@@ -13,8 +13,8 @@ match input_operator:
         result = int(num1) * int(num2)
         print(f"The result is {result}.")
     case '/':
-        if int(num2) == 0:
-            print("Cannot divide by zero.")
-        else:
-            result = int(num1) / int(num2)
+        try:
+            result = int(num1) / int(num2)  # will raise ZeroDivisionError if num2 == 0
             print(f"The result is {result}.")
+        except ZeroDivisionError:
+            print("Cannot divide by zero.")
