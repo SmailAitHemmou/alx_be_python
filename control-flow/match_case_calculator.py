@@ -9,5 +9,8 @@ match input_operator:
         print(f"The result is {num1 - num2}.")
     case '*':
         print(f"The result is {num1 * num2}.")
-    case '/': 
-        print(f"The result is {num1 / num2}.")
+    case '/':
+        try: 
+            print(f"The result is {num1 / num2}.")
+        except ZeroDivisionError:
+            print("Cannot divide by zero.")
