@@ -4,4 +4,4 @@ x = number
 y = [1,2]
 z = x * y
 for z in range(1, 11):
-    print(f"{x} x {z} = {x * z}")
+    print(f"{x} * {z} = {x * z}")
