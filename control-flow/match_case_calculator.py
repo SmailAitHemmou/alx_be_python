@@ -14,3 +14,5 @@ match input_operator:
             print(f"The result is {num1 / num2}.")
         except ZeroDivisionError:
             print("Cannot divide by zero.")
+    case _:
+        print("Invalid operator.")

@@ -1,6 +1,4 @@
   # Personal Daily Reminder :
-# daily_reminder.py
-
 # Prompt for task details
 task = input("Enter your task: ").lower()
 priority = input("Enter the priority level (high, medium, low): ").lower()
