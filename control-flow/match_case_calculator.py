@@ -11,10 +11,10 @@ try:
         case '*':
             print(f"The result is {num1 * num2}.")
         case '/':
-            if num2 == 0:
-                print("Cannot divide by zero.")
-            else:
+            try: 
                 print(f"The result is {num1 / num2}.")
+            except ZeroDivisionError:
+                print("Cannot divide by zero.")
         case _:
             print("Invalid operator.")
 except ValueError:
