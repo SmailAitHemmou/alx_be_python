@@ -1,17 +1,13 @@
   # Arithmetic Operations Function :
 
 def perform_operation(num1, num2, operation):
-    match operation:
-        case "add":
-            return num1 + num2
-        case "subtract":
-            return num1 - num2
-        case "multiply":
-            return num1 * num2
-        case "divide":
-            if num2 == 0:
-                print("cannot divide by zero")
-            else:
-                return num1 / num2
-        case _:
-            print("Invalid operation")
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        return num1 / num2 if num2 != 0 else print("Cannot divide by zero.")
+    else:
+        print("Operation not recognized. Use 'add', 'subtract', 'multiply', or 'divide'.")
