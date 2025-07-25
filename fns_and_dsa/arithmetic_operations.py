@@ -9,7 +9,7 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     elif operation == 'divide':
         if num2 == 0 :
-            return None
+            return "Cannot divide by zero."
         return num1 / num2
     else:
-        print("Operation not recognized. Use 'add', 'subtract', 'multiply', or 'divide'.")
+        return "Operation not recognized. Use 'add', 'subtract', 'multiply', or 'divide'."
