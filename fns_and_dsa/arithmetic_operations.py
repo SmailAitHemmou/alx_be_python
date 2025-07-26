@@ -1,7 +1,7 @@
   # Arithmetic Operations Function :
 
 def perform_operation(num1, num2, operation):
-    
+
     operation = operation.lower()
 
     if operation == 'add':
@@ -13,6 +13,7 @@ def perform_operation(num1, num2, operation):
     elif operation == 'divide':
         if num2 == 0 :
             return "Error: Division by zero"
-        return num1 / num2
+        else:
+            return num1 / num2
     else:
         return "Error: Invalid operation"
