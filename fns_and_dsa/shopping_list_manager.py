@@ -27,10 +27,10 @@ def main():
                 print(f"{item} is not in the list.")
             # Prompt for and remove an item
             pass
-        elif choice == '3':
-            print("Shopping List:")
-            for item in shopping_list:
-                print(f"- {item}")
+        # elif choice == '3':
+        #     print("Shopping List:")
+        #     for item in shopping_list:
+        #         print(f"- {item}")
             # Display the shopping list
             pass
         elif choice == '4':
