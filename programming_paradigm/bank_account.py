@@ -7,7 +7,7 @@ class BankAccount:
 
     def deposit(self, amount):
         if amount > 0:
-            amount = float(input("Enter deposit amount: "))
+            # amount = float(input("Enter deposit amount: "))
             self.balance += amount
         else:
             print("Deposit amount must be positive.")
@@ -15,7 +15,7 @@ class BankAccount:
     def withdraw(self, amount):
         if amount > 0 and amount <= self.balance:
             self.balance -= amount
-            amount = float(input("Enter withdrawal amount: "))
+            # amount = float(input("Enter withdrawal amount: "))
             return True
         else:
             print("Withdrawal amount must be positive and less than or equal to the current balance.")
@@ -23,3 +23,8 @@ class BankAccount:
 
     def display_balance(self):
         print(f"Current balance: ${self.balance:.2f}")
+
+account = BankAccount()
+account.deposit(100)
+account.withdraw(50)
+account.display_balance()
