@@ -25,12 +25,12 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 5), 0)
         self.assertEqual(self.calc.multiply(-1, 5), -5)
 
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(5, -1), -5)
         self.assertEqual(self.calc.divide(0, 10), 0)
 
-    def test_divide_by_zero(self):
+    def test_division_by_zero(self):
         self.assertIsNone(self.calc.divide(10, 0))
 
 if __name__ == '__main__':
